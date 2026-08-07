@@ -1,4 +1,4 @@
-# Salesforce Training Bootcamp (30 Days)
+# Salesforce Training(30 Days)
 
 ## About
 
@@ -94,11 +94,10 @@ Salesforce-Training-Bootcamp/
 🚀 Continuing my **30-Day Salesforce Training Bootcamp** by learning and implementing real-world Salesforce development concepts every day.
 
 ---
+## 👩‍💻 Developer Profile
 
-## Author
-
-**Sandhya Rajulapudi**
-
-B.Tech Computer Science & Engineering
-
-Learning Salesforce Development | Apex | LWC | SOQL | DML | Triggers | Asynchronous Apex
+* **Developer Name:** Ganta chandini Priya
+* **Registration ID:** 24PA5A4504
+* B.Tech in AI&DS
+* **Program:** Salesforce Development Bootcamp
+* **Track:** Application Engineering, Apex Core, Process Automation & LWC Architecture
