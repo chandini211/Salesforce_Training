@@ -1,34 +1,33 @@
-# Day 01 - Salesforce-Training
+# 🚀 Day 01 - Salesforce Training
 
-## Topics Covered
+## 📚 What I Learned
 
-- Salesforce Data Modeling
-- Object Relationships
-- Apex Basics
-- SOQL Queries
-- Apex Triggers
-- Lightning Web Components (LWC)
+* **Data Modeling:** Creating custom objects and connecting them with relationships.
+* **Apex Programming:** Writing basic Apex logic and triggers using Handler classes.
+* **SOQL:** Writing queries to search and fetch database records.
+* **LWC:** Building simple Lightning Web Components with the `@wire` decorator.
 
-## Tasks Completed
+---
 
-✅ Designed a custom data model
+## 🛠 Tasks Done
 
-✅ Created custom objects and relationships
+- [x] Designed custom objects and relationships.
+- [x] Practiced writing 5 SOQL queries.
+- [x] Created an Apex Trigger with a Handler Class.
+- [x] Built a basic LWC component using `@wire`.
 
-✅ Practiced 5 SOQL queries
+---
 
-✅ Implemented an Apex Trigger with a Handler Class
+## 📂 Deliverables Added
 
-✅ Built a basic Lightning Web Component using @wire
+* Data model screenshots from Object Manager
+* 5 SOQL queries and their outputs
+* Apex Trigger execution screenshots
+* LWC source code files
+* End-of-Day reflection summary
 
-## Deliverables
+---
 
-- Object Manager Data Model Screenshot
-- SOQL Queries with Output
-- Trigger Screenshots
-- LWC Component Files
-- End-of-Day Reflection
+## 🎯 Status
 
-## Status
-
-✅ Completed
+**Status:** `✅ Completed`
