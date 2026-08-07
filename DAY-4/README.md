@@ -1,72 +1,42 @@
-# Day 4 –  First Lightning Web Component (LWC)
+# 🎨 Day 04: UI Development with Lightning Web Components (LWC)
 
-## Objective
-Built the first user interface for the Placement Management System using Lightning Web Components (LWC).
-
----
-
-## 1. What is LWC?
-
-Lightning Web Components (LWC) is Salesforce's modern UI framework based on web standards like HTML, JavaScript, and CSS. It is used to build fast, reusable, and interactive user interfaces.
+[![LWC](https://img.shields.io/badge/Framework-Lightning_Web_Components-00A1E0?style=for-the-badge&logo=lightning&logoColor=white)](https://developer.salesforce.com/docs/component-library/overview/components)
+[![UI Tech](https://img.shields.io/badge/Stack-HTML5%20%7C%20JS%20%7C%20CSS3-yellow?style=for-the-badge)](https://developer.mozilla.org/)
+[![Status](https://img.shields.io/badge/Sprint_Status-Completed-brightgreen?style=for-the-badge)](#-key-deliverables--artifacts)
 
 ---
 
-## 2. What did you build?
-
-Built the **Placement Home** component (`placementHome`) with the following features:
-
-- Welcome banner
-- Institute logo
-- Student profile (Name, Roll Number, Department)
-- Current date
-- Dashboard cards (Companies, Jobs, Applications, Status)
-- "Show Welcome" button
-- "Apply Now" button
-- Status changes from **Not Applied** to **Applied** using JavaScript
+## 📌 Objective
+Designed and deployed the first interactive client-side user interface for the **Placement Management System** using Salesforce's modern **Lightning Web Components (LWC)** framework.
 
 ---
 
-## 3. Which file contains HTML?
+## 💡 Technical Concepts Explained
 
-**placementHome.html**
-
-This file is used to design the page layout, headings, buttons, cards, and other UI elements.
-
----
-
-## 4. Which file contains JavaScript?
-
-**placementHome.js**
-
-This file contains the component logic, variables, event handling, button click actions, and data binding.
+### 1️⃣ What is LWC?
+**Lightning Web Components (LWC)** is Salesforce's lightweight, W3C Web Standards-based UI framework built on modern HTML, ES6+ JavaScript, and CSS. It offers high rendering performance, seamless integration with platform data, and reusable component-driven architecture.
 
 ---
 
-## 5. What did you learn today?
+## 🛠 What Was Built? (`placementHome`)
 
-- Introduction to Lightning Web Components (LWC)
-- LWC folder structure
-- HTML, JavaScript, CSS, and Meta XML files
-- Data Binding
-- Event Handling
-- Deploying an LWC using Lightning App Builder
-- Building an interactive user interface without using Apex
-
----
-
-## Technologies Used
-
-- Salesforce Lightning Web Components (LWC)
-- HTML
-- JavaScript
-- CSS
-- Lightning App Builder
+Developed a custom frontend component named **Placement Home** featuring:
+* **Branded Interface:** Interactive welcome banner featuring the official institute logo.
+* **Student Info Card:** Displays dynamic profile details including *Student Name*, *Roll Number*, and *Department*.
+* **Real-time Metadata:** Displays the current calendar date.
+* **Dashboard Summary Cards:** Overview metrics for *Companies*, *Open Jobs*, *Submitted Applications*, and *Current Status*.
+* **Interactive Actions:** 
+  * `"Show Welcome"` button triggering dynamic greeting dialogs.
+  * `"Apply Now"` button with dynamic JavaScript state updates changing user status from **Not Applied** ➔ **Applied**.
 
 ---
 
-## Submission Files
+## 📂 Component Bundle Architecture
 
-- Source Code
-- Screenshots
-- GitHub Repository
-- README
+```text
+placementHome/
+│
+├── 📄 placementHome.html       # UI Layout, Templates, Buttons, and SLDS Styling Elements
+├── 📜 placementHome.js         # Reactive Data Properties, Event Handlers, and Button Actions
+├── 🎨 placementHome.css        # Custom CSS Styling Rules (Overlays & Custom Branding)
+└── ⚙️ placementHome.js-meta.xml # Target Exposure Metadata (Lightning App Builder Config)
