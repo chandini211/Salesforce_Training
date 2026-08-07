@@ -1,61 +1,49 @@
-# Day 3 – Salesforce Automation
+# ⚡ Day 03: Automation & Data Validation (Placement Management System)
 
-## Objective
-Implemented automation for the Placement Management System using Salesforce Flows and Validation Rules.
-
----
-
-## 1. Which requirements did you solve using Flow?
-
-The following requirements were automated using Record-Triggered Flows:
-
-- Automatically populate the Application Date when a new application is created.
-- Send an email notification after a successful application submission.
-- Automatically create an Offer Letter record when the application status becomes "Selected".
+## 📌 Objective
+Automated key business processes and enforced data integrity for the **Placement Management System** using Salesforce Flow Builder and Validation Rules.
 
 ---
 
-## 2. Which requirements required Validation Rules?
+## ⚙️ Solution Architecture Breakdown
 
-The following business rules were implemented using Validation Rules:
+### 1️⃣ Declarative Automation (Salesforce Flows)
+Used **Record-Triggered Flows** to handle no-code background actions:
+* **Auto-Populate Fields:** Automatically sets the `Application Date` upon creation of a new application record.
+* **Email Alerts:** Triggers an automated notification email when an application is successfully submitted.
+* **Record Generation:** Automatically generates a child `Offer Letter` record as soon as an application status changes to **"Selected"**.
 
-- Prevent students with a CGPA below the required value from applying.
-- Prevent applications after the job closing date.
+### 2️⃣ Data Integrity (Validation Rules)
+Enforced declarative business restrictions before records are committed to the database:
+* **CGPA Eligibility Check:** Blocks application submissions from students whose CGPA falls below the required threshold.
+* **Deadline Enforcement:** Restricts new applications submitted after the job posting's official closing date.
 
-These rules ensure only valid records are saved.
-
----
-
-## 3. Which requirements still needed Apex?
-
-The following requirements required Apex because they involve more complex business logic:
-
-- Prevent duplicate applications for the same student and job.
-- Perform advanced eligibility checks before saving an application.
-- Handle future business logic that cannot be achieved using only Flows or Validation Rules.
-
----
-
-## 4. Why did you choose those solutions?
-
-- **Flow** was used for automation without writing code.
-- **Validation Rules** were used to prevent invalid data from being saved.
-- **Apex** was chosen for complex business logic that requires custom programming and decision-making.
+### 3️⃣ Custom Code Requirements (Apex Integration)
+Identified complex edge cases requiring **Apex** programmatic logic:
+* **Duplicate Prevention:** Checking and blocking duplicate applications for the exact same student and job posting.
+* **Multi-Factor Qualification:** Running dynamic, deep-level eligibility checks prior to saving the record.
+* **Scalable Business Architecture:** Preparing for enterprise logic that exceeds declarative Flow limits.
 
 ---
 
-## Technologies Used
+## 🛠 Design Rationale: Why These Tools?
 
-- Salesforce Flow
-- Validation Rules
-- Salesforce Objects
-- Lightning Platform
+| Requirement Type | Selected Tool | Justification |
+| :--- | :--- | :--- |
+| **No-Code Automation** | **Salesforce Flow** | Fast implementation, declarative maintenance, and native event tracking without Apex overhead. |
+| **Data Quality Enforcement** | **Validation Rules** | Immediate user-facing error feedback at the UI level to block bad data entry. |
+| **Complex Logic & Checks** | **Apex Code** | Imperative programming power for multi-object cross-checking and custom algorithm handling. |
 
 ---
 
-## Learning Outcome
+## 🧰 Tech Stack
+- **Declarative Automation:** Salesforce Flow Builder (Record-Triggered)
+- **Data Governance:** Formula Validation Rules
+- **Platform Base:** Lightning Platform & Custom Objects
 
-- Created Record-Triggered Flows.
-- Implemented Validation Rules.
-- Understood when to use Flow, Validation Rules, and Apex.
-- Learned how Salesforce automation improves business processes.
+---
+
+## 🎓 Core Takeaways
+* Built functional **Record-Triggered Flows** for automated notifications and record provisioning.
+* Configured declarative **Validation Rules** to maintain data quality.
+* Developed an architectural framework for deciding when to use **Flows vs. Validation Rules vs. Apex**.
