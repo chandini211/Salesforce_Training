@@ -1,18 +1,71 @@
-# Salesforce DX Project: Next Steps
+## 📸 Practical Implementation
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+### 1. Student Placement Record
 
-## How Do You Plan to Deploy Your Changes?
+The Student Record Page provides the placement experience through reusable Lightning Web Components.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+![Student Record](./screenshots/01-student-record.png)
 
-## Configure Your Salesforce DX Project
+---
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### 2. Eligible Jobs
 
-## Read All About It
+Jobs are filtered according to the student's CGPA, branch and application deadline.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+![Eligible Jobs](./screenshots/02-eligible-jobs.png)
+
+---
+
+### 3. My Applications
+
+Students can view their submitted applications and current status.
+
+![My Applications](./screenshots/03-my-applications.png)
+
+---
+
+### 4. Application Record
+
+The submitted application is stored as an `Application__c` Salesforce record.
+
+![Application Record](./screenshots/04-application-record.png)
+
+---
+
+### 5. Application Email Automation
+
+A Record-Triggered Flow automatically processes the application email.
+
+![Application Email](./screenshots/05-application-email.png)
+
+---
+
+### 6. Duplicate Application Validation
+
+The system prevents a student from applying for the same job more than once.
+
+![Duplicate Validation](./screenshots/06-duplicate-validation.png)
+
+---
+
+### 7. Salesforce Flow
+
+The application automation is implemented using Salesforce Flow.
+
+![Flow Builder](./screenshots/07-flow-builder.png)
+
+---
+
+### 8. Lightning App Builder
+
+The LWC components are integrated into the Student Record Page.
+
+![Lightning App Builder](./screenshots/08-lightning-app-builder.png)
+
+---
+
+### 9. Deployment
+
+The completed Salesforce metadata was successfully deployed.
+
+![Deployment Success](./screenshots/09-deployment-success.png)
