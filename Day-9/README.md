@@ -1,71 +1,87 @@
-## 📸 Practical Implementation
+# 🏆 Day 9 – Lightning Web Components in Salesforce
 
-### 1. Student Placement Record
+## 🎓 Student Placement Management System
 
-The Student Record Page provides the placement experience through reusable Lightning Web Components.
-
-![Student Record](./screenshots/01-student-record.png)
+> **Building a component-driven Salesforce placement experience using Lightning Web Components, Apex, Custom Objects, Salesforce Flow and Lightning App Builder.**
 
 ---
 
-### 2. Eligible Jobs
+## 📌 Sprint Overview
 
-Jobs are filtered according to the student's CGPA, branch and application deadline.
+Day 9 focuses on **Lightning Web Components (LWC)** and their integration with Salesforce's backend and automation capabilities.
 
-![Eligible Jobs](./screenshots/02-eligible-jobs.png)
+As part of this sprint, I developed a **Student Placement Management System** that allows students to view eligible placement opportunities, apply for jobs, track submitted applications, and receive automated application notifications.
 
----
+The implementation combines:
 
-### 3. My Applications
-
-Students can view their submitted applications and current status.
-
-![My Applications](./screenshots/03-my-applications.png)
-
----
-
-### 4. Application Record
-
-The submitted application is stored as an `Application__c` Salesforce record.
-
-![Application Record](./screenshots/04-application-record.png)
-
----
-
-### 5. Application Email Automation
-
-A Record-Triggered Flow automatically processes the application email.
-
-![Application Email](./screenshots/05-application-email.png)
+- ⚡ Lightning Web Components
+- ☁️ Salesforce Apex
+- 🗄️ Custom Salesforce Objects
+- 🔗 LWC–Apex Integration
+- 📡 `@wire`
+- 🚀 Imperative Apex
+- 🔑 `@api`
+- 🧩 Parent–Child Component Architecture
+- 🔄 Custom Events
+- 🛡️ Business Validation
+- ⚙️ Record-Triggered Flow
+- 📧 Automated Email Notification
+- 🎨 Lightning App Builder
+- 🧪 Jest Testing
+- 🚀 Salesforce Metadata Deployment
 
 ---
 
-### 6. Duplicate Application Validation
+# 🎯 Sprint Objectives
 
-The system prevents a student from applying for the same job more than once.
+The main objective of this sprint was to understand how modern Salesforce applications are built using reusable frontend components connected to Apex services and Salesforce automation.
 
-![Duplicate Validation](./screenshots/06-duplicate-validation.png)
+### Learning Objectives
+
+- ✅ Understand Lightning Web Component architecture
+- ✅ Build reusable and modular components
+- ✅ Understand component lifecycle and state
+- ✅ Use `@api` for component properties
+- ✅ Retrieve Salesforce data using `@wire`
+- ✅ Execute Apex imperatively from LWC
+- ✅ Pass record IDs between Salesforce and LWC
+- ✅ Handle user interactions and events
+- ✅ Implement conditional rendering
+- ✅ Render Salesforce records dynamically
+- ✅ Implement business validation using Apex
+- ✅ Create and manage Salesforce custom objects
+- ✅ Build an application submission workflow
+- ✅ Prevent duplicate applications
+- ✅ Validate application deadlines
+- ✅ Implement Salesforce Flow automation
+- ✅ Trigger automated application emails
+- ✅ Display submitted applications
+- ✅ Deploy LWC and Salesforce metadata
+- ✅ Test the complete application workflow
 
 ---
 
-### 7. Salesforce Flow
+# 💡 Business Problem
 
-The application automation is implemented using Salesforce Flow.
+Traditional placement management can require students to manually search through job opportunities, verify eligibility, submit applications and track their application status.
 
-![Flow Builder](./screenshots/07-flow-builder.png)
+This project addresses that workflow by bringing the complete process into Salesforce.
 
----
+### The system helps students:
 
-### 8. Lightning App Builder
-
-The LWC components are integrated into the Student Record Page.
-
-![Lightning App Builder](./screenshots/08-lightning-app-builder.png)
-
----
-
-### 9. Deployment
-
-The completed Salesforce metadata was successfully deployed.
-
-![Deployment Success](./screenshots/09-deployment-success.png)
+```text
+View Placement Opportunities
+          ↓
+Check Eligibility
+          ↓
+View Job Details
+          ↓
+Apply for Job
+          ↓
+Validate Application
+          ↓
+Create Application
+          ↓
+Receive Email Notification
+          ↓
+Track Application
