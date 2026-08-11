@@ -34,3 +34,41 @@ Check Branch
 Check Deadline
       ↓
 Display Eligible Jobs
+
+
+##Features
+Display eligible jobs
+Apply for a job
+Validate job deadline
+Prevent duplicate applications
+Create Application record
+View submitted applications
+Send application email
+Display success and error messages
+
+##Components
+Eligible Jobs
+Displays jobs for which the student is eligible.
+
+My Applications
+Displays applications already submitted by the student.
+
+Apex Controller
+EligibleJobsController.cls
+
+Methods:
+getEligibleJobs()
+applyForJob()
+getMyApplications()
+
+##Automation
+Application Email Flow:
+
+Application Created
+        ↓
+Set Application Date
+        ↓
+Send Application Email
+
+##Result
+The student can view eligible jobs, apply for a job, create an Application record, and view submitted applications.
