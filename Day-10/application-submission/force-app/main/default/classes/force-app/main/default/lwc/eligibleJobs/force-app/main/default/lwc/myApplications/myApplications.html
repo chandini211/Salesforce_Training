@@ -1,0 +1,52 @@
+<template>
+    <lightning-card title="My Applications" icon-name="standard:job_profile">
+
+        <template if:true={hasApplications}>
+            <div class="slds-p-around_medium">
+
+                <template for:each={applications} for:item="application">
+
+                    <div
+                        key={application.Id}
+                        class="slds-box slds-m-bottom_medium"
+                    >
+
+                        <h2 class="slds-text-heading_medium slds-m-bottom_small">
+                            {application.Job__r.Name}
+                        </h2>
+
+                        <p>
+                            <strong>Status:</strong>
+                            {application.Status__c}
+                        </p>
+
+                        <p>
+                            <strong>Application Date:</strong>
+                            {application.CreatedDate}
+                        </p>
+
+                        <p>
+                            <strong>Minimum CGPA:</strong>
+                            {application.Job__r.Minimum_CGPA__c}
+                        </p>
+
+                        <p>
+                            <strong>Eligible Branch:</strong>
+                            {application.Job__r.Eligible_Branch__c}
+                        </p>
+
+                    </div>
+
+                </template>
+
+            </div>
+        </template>
+
+        <template if:false={hasApplications}>
+            <div class="slds-p-around_medium">
+                <p>No applications found.</p>
+            </div>
+        </template>
+
+    </lightning-card>
+</template>
