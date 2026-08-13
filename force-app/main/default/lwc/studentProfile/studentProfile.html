@@ -1,0 +1,104 @@
+<template>
+    <lightning-card
+        title="Student Profile"
+        icon-name="standard:avatar">
+
+        <div class="profile-container">
+
+            <lightning-record-edit-form
+                object-api-name="Student__c"
+                record-id={recordId}
+                onsuccess={handleSuccess}
+                onerror={handleError}>
+
+                <lightning-messages></lightning-messages>
+
+                <!-- Student Name -->
+                <div class="profile-field">
+                    <lightning-input-field
+                        field-name="Name">
+                    </lightning-input-field>
+                </div>
+
+                <!-- Phone -->
+                <div class="profile-field">
+                    <lightning-input-field
+                        field-name="Phone__c"
+                        required>
+                    </lightning-input-field>
+                </div>
+
+                <!-- Email -->
+                <div class="profile-field">
+                    <lightning-input-field
+                        field-name="Email__c"
+                        required>
+                    </lightning-input-field>
+                </div>
+
+                <!-- Branch -->
+                <div class="profile-field">
+                    <lightning-input-field
+                        field-name="Branch__c"
+                        required>
+                    </lightning-input-field>
+                </div>
+
+                <!-- CGPA -->
+                <div class="profile-field">
+                    <lightning-input-field
+                        field-name="CGPA__c"
+                        required>
+                    </lightning-input-field>
+                </div>
+
+                <!-- Backlogs -->
+                <div class="profile-field">
+                    <lightning-input-field
+                        field-name="Backlogs__c">
+                    </lightning-input-field>
+                </div>
+
+                <!-- Skills -->
+                <div class="profile-field">
+                    <lightning-input-field
+                        field-name="Skills__c">
+                    </lightning-input-field>
+                </div>
+
+                <!-- Preferred Location -->
+                <div class="profile-field">
+                    <lightning-input-field
+                        field-name="Preferred_Location__c">
+                    </lightning-input-field>
+                </div>
+
+                <!-- Save Button -->
+                <div class="button-container">
+                    <lightning-button
+                        type="submit"
+                        variant="brand"
+                        label="Save Profile">
+                    </lightning-button>
+                </div>
+
+            </lightning-record-edit-form>
+
+            <!-- Success Message -->
+            <template if:true={showSuccess}>
+                <div class="success-message">
+                    Profile updated successfully.
+                </div>
+            </template>
+
+            <!-- Error Message -->
+            <template if:true={showError}>
+                <div class="error-message">
+                    Unable to update profile. Please check the fields and try again.
+                </div>
+            </template>
+
+        </div>
+
+    </lightning-card>
+</template>
